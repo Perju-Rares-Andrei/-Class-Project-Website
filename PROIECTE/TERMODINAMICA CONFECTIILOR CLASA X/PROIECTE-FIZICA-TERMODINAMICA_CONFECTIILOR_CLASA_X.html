@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#e9e9e9;
+}
+
+.Meniu {
+  overflow: hidden;
+  background-color: #333;
+  border: 3px solid #f2b632;
+  
+}
+
+.Meniu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.Meniu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #f2b632;
+  color: white;
+}
+
+.Meniu .icon {
+  display: none;
+}
+.Box{
+  width:60%;
+  margin: 30px 0;
+  padding: 20px;
+  background-color:white;
+  border: 3px solid #f2b632;
+  margin-right:auto;
+  margin-left:auto;
+
+}
+.Bottom {
+    background-color: #333 ;
+    color: white;
+    text-align: center;
+    border: 3px solid #f2b632;
+    
+}
+.logo{
+   float:left ;
+   width: 199.9px;
+  }
+.Slide {
+  display: none
+  }
+img {
+  vertical-align: middle;
+  }
+.proiect {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+ 
+  
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+@media screen and (max-width: 600px) {
+  .Meniu a:not(:first-child) {display: none;}
+  .Meniu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Meniu.responsive {
+    position: relative;
+	
+	}
+  .Meniu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .Meniu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .Box{
+  	  font-size:88%;
+	  width:80%;
+	  
+  }
+  .Meniu {
+  	  margin-top:10px;
+	  width:91.5%;
+	  margin-left:auto;
+	  margin-right:auto;
+  }
+  .Bottom{
+      margin-bottom:10px;
+	  width:91.5%;
+	  margin-left:auto;
+	  margin-right:auto;
+  }
+  .logo{
+    width:190px;
+    height: 48px;
+    position: relative;
+  }
+  .ajust{
+    margin-top:50px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="Meniu" id="myMeniu">
+  <img src="../../IMAGINI DE BAZA/LOGO.jpg" class="logo">
+  <a href="../../ACASA.html" class="ajust">Acasa</a>
+  <a href="../../NOUTATI.html">Noutati</a>
+  <a href="../../ELEVI.html">Elevi</a>
+  <a href="../../PROIECTE.html">Proiecte</a>
+  <a href="../../CONTACT.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="Box">
+    <div class="proiect">
+
+        <div class="Slide fade">
+          <div class="numbertext">1 / 17</div>
+          <img src="IMAGINI PROIECT\0.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="Slide fade">
+          <div class="numbertext">2 / 17</div>
+          <img src="IMAGINI PROIECT\1.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="Slide fade">
+          <div class="numbertext">3 / 17</div>
+          <img src="IMAGINI PROIECT\2.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">4 / 17</div>
+          <img src="IMAGINI PROIECT\3.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">5 / 17</div>
+          <img src="IMAGINI PROIECT\4.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">6 / 17</div>
+          <img src="IMAGINI PROIECT\5.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">7 / 17</div>
+          <img src="IMAGINI PROIECT\6.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">8 / 17</div>
+          <img src="IMAGINI PROIECT\7.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">9 / 17</div>
+          <img src="IMAGINI PROIECT\8.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">10 / 17</div>
+          <img src="IMAGINI PROIECT\9.jpg "style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">11 / 17</div>
+          <img src="IMAGINI PROIECT\10.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">12 / 17</div>
+          <img src="IMAGINI PROIECT\11.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">13 / 17</div>
+          <img src="IMAGINI PROIECT\12.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">14 / 17</div>
+          <img src="IMAGINI PROIECT\13.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">15 / 17</div>
+          <img src="IMAGINI PROIECT\14.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">16 / 17</div>
+          <img src="IMAGINI PROIECT\15.jpg" style="width:100%">
+          
+        </div>
+        <div class="Slide fade">
+          <div class="numbertext">17 / 17</div>
+          <img src="IMAGINI PROIECT\16.jpg" style="width:100%">
+          
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+          <span class="dot" onclick="currentSlide(7)"></span> 
+          <span class="dot" onclick="currentSlide(8)"></span> 
+          <span class="dot" onclick="currentSlide(9)"></span> 
+          <span class="dot" onclick="currentSlide(10)"></span> 
+          <span class="dot" onclick="currentSlide(11)"></span> 
+          <span class="dot" onclick="currentSlide(12)"></span> 
+          <span class="dot" onclick="currentSlide(13)"></span> 
+          <span class="dot" onclick="currentSlide(14)"></span> 
+          <span class="dot" onclick="currentSlide(15)"></span> 
+          <span class="dot" onclick="currentSlide(16)"></span> 
+          <span class="dot" onclick="currentSlide(17)"></span> 
+          
+        </div>
+</div>
+<div class="Bottom">
+       <p>Tel:0758671974</p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myMeniu");
+  if (x.className === "Meniu") {
+    x.className += " responsive";
+  } else {
+    x.className = "Meniu";
+  }
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("Slide");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
